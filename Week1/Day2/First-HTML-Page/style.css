@@ -1,0 +1,21 @@
+.catLion{
+    width: 100%;
+    border: 6px solid #eb6734;
+}
+.catLionDiv{
+    width: 30%;
+    padding-left: 33%;
+}
+#lionTitle{
+    text-align: center;
+    color: #ff5555;
+    font-size: 25px;
+    border: 2px solid black;
+}
+#lionDiv{
+    padding-left: 10%;
+    width: 80%;
+}
+.tabItem{
+    border: 1px solid black;
+}
