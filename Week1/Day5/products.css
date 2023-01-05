@@ -1,0 +1,65 @@
+#prodWrap{
+    border: 2px solid black;
+    width: 100%;
+    height: 70%;
+}
+#img1{
+ background: url(ShoppingWebsite/img/image1.png);
+ background-size: cover;
+}
+#img2{
+    background: url(ShoppingWebsite/img/image2.png);  
+    background-size: cover;
+}
+#img3{
+    background: url(ShoppingWebsite/img/image3.png); 
+    background-size: cover;
+}
+#img4{
+    background: url(ShoppingWebsite/img/image4.png); 
+    background-size: cover;
+}
+.images{
+    width: 100%;
+    height: 60%;
+    border: 1px dashed red;
+    position: absolute;
+    
+}
+.imgWrap{
+    display: inline-block;
+    position: relative;
+    width: 18%;
+    height: 90%;
+    margin-left: 4vw;
+    margin-top: 3vw;
+}
+.new{
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    background-color: rgba( 131, 112, 112, 0.5);
+    border-radius: 50%;
+    margin-top: 0.5vw;
+    margin-left: 0.5vw;
+}
+.parNew{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 1vw;
+    margin-left: 10%;
+}
+.disc{
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    background-color: red;
+    border-radius: 50%;
+    margin-top: 0.5vw;
+    margin-left: 14vw;
+}
+.parPerc{
+    color: aliceblue;
+    font-size: 1vw;
+    margin-left: 10%;
+}
