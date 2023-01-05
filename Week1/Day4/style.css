@@ -92,4 +92,17 @@ width: 10%;
 #student{
 width: 12%;
 }
+.fa-solid{
+    color: rgba(146, 110, 110, 0.5);
+    position: absolute;
+}
+#fontAwes{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.parCont{
+    text-align: center;
+}
 
