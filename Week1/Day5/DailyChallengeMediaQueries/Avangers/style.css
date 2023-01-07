@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto+Condensed:ital@1&family=Seymour+One&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(168069577-2f570d08-61d3-49d8-b7dd-c4b9192aaf68.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header{
+    width: 100%;
+    height: 10%;
+    background-color: red;
+}
+#nav{
+    padding-left: 30%;
+}
+li, a{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 1.2% 0 0 4%;
+    font-size: 35px;
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+#name{
+    width: 60%;
+    height: 80px;
+    padding:1.5% 0 0 1.5%;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#surname{
+   padding-left: 15%; 
+}
+#logo{
+    position: absolute;
+    margin-left: 1vw;
+    margin-top: 0.2vw ;
+    padding-left: 0;
+    width: 9%;
+    height: 9%;
+    background-image: url(Black-Avengers-Logo-Vector-Transparent-PNG.png);
+    background-size: cover;
+    filter: invert(80%); 
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0,0,255, 0.3);
+    color: white;
+    text-align: center;
+  }
+  p{
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  footer{
+    position: absolute;
+    width: 60%;
+    margin-bottom: 5%;
+    margin-left: 40%;
+}
+
+  @media screen and (max-width: 768px) and (min-width:600px) {
+    #header{
+        background-color: lightgreen;
+    }
+    #nav{
+        padding-left: 40%;
+        width: 60vw;
+    }
+    li, a{
+        margin-top: 1vw;
+        font-size: 20px;  
+        color: black;  
+    }
+    #name{
+        width: 40%;
+        height: 55px;
+        font-size: 60px;
+    }
+    #surname{
+       padding-left: 15%; 
+    }
+      p{
+        font-size: 20px;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+      #logo{
+        margin-top: 2vw;
+        margin-left: 3vw;
+        background-size: 8vw;
+        background-repeat: no-repeat;
+        width: 10%;
+        height: 10%;
+    }
+    footer{
+        position: absolute;
+        width: 100%;
+        margin-left: 0;
+    }
+    
+  }
+  
+  @media screen and (max-width: 600px) {
+    #header{
+        background-color: yellow;
+    }
+    #nav{
+        padding-left: 30%;
+        width: 60vw;
+    }
+    li, a{
+        margin-top: 1vw;
+        font-size: 15px; 
+        color: black;   
+    }
+    #name{
+        width: 30%;
+        height: 40px;
+        font-size: 40px;
+    }
+    #surname{
+       padding-left: 10%; 
+    }
+      p{
+        font-size: 15px;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+      #logo{
+        margin-top: 1vw;
+        margin-left: 1.3vw;
+        background-size: 15vw;
+        background-repeat: no-repeat;
+        filter: invert(60%);
+        width: 10%;
+        height: 9%;
+    }
+    footer{
+        position: absolute;
+        width: 100%;
+        margin-bottom: 20%;
+        margin-left: 0;
+    }
+    
+  }
+  @media screen and (min-width: 1200px){
+    #header{
+        background-color: black;
+    }
+    li, a{
+        font-size: 20px;  
+        color: white;  
+    }
+    #nav{
+        margin-left: 30%;
+    }
+    li, a{
+        margin-top: 0.4vw;
+        font-size: 25px; 
+    }
+    footer{
+        position: absolute;
+        width: 60%;
+        margin-bottom: 5%;
+        margin-left: 40%;
+    }
+  }
