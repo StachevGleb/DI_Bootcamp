@@ -1,5 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&family=Roboto+Condensed:wght@300&family=Roboto+Slab:wght@500&display=swap');
 body{
-    background-image: url(https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=800);
+    margin: 0;
+    padding: 0;
+background-image: url(https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=800);
 background-repeat: no-repeat;
 background-size: cover;
+}
+header{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #f8f9fa;
+}
+#but0, #but1{
+    background-color: #007cff;
+    border: none;
+    border-radius: 20%;  
+    position: absolute;
+
+}
+#but0{
+    margin-top: 1.5vw;
+    margin-left: 83vw;
+}
+#titleDiv{
+    position: absolute;
+    font-size: 15px;
+    /* margin-top: 0vw; */
+    margin-left: 3vw;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#mainDiv{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 25%;
+    height: 25%;
+    width: 35%;
+}
+#parDiv{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 60%;
+}
+p{
+    font-family: 'Nanum Gothic', sans-serif;   
+}
+#searchDiv{
+margin-top: 35%;
+display: inline-block;
+margin-left: 1vw;
+}
+#but1{
+margin-left: 8vw;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    margin-left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #f8f9fa;
+    /* display: inline-block; */
+}
+.botPar{
+    color: rgba(0,0,0, 0.5);
+}
+.botDiv{
+    margin-top: 1vw;
+    position: absolute;
+    width: 25%;
+    text-align: center;
+}
+#botDiv1{
+    margin-left: 5%;
+}
+#botDiv2{
+    margin-left: 40%;
+}
+#botDiv3{
+    margin-left: 70%;
+}
+i{
+    color:  #007cff ;
 }
