@@ -1,0 +1,81 @@
+body{
+    background-image: url("img/1.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+#titWrap{
+  position: relative;  
+  width: 80vw;
+  height: 30vh;
+  margin-top: 10vh;
+  margin-left: 10vw;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2,1fr);
+}
+#titOne{
+grid-row: 1/2;
+grid-column: 1/4;
+}
+footer{
+    position: relative;
+    width: 90vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 22vh; 
+    margin-left: 3vw;
+    text-align: center;
+}
+.linkWrap{
+    position: absolute;
+    width: 26vw;
+    height: 30vh; 
+    margin-left: 1.5vw;
+}
+
+.topPar{
+    position: absolute;
+    width: 26vw;
+    height: 20vh;
+    background-color: #ffffff;
+    margin-left: 1.5vw;
+}
+.botPar{
+    position: absolute;
+    width: 26vw;
+    height: 15vh;
+    background-color: #fb8b8a;
+    margin-left: 1.5vw;
+    margin-top: 20vh;
+}
+ 
+#trdPar{
+margin-left: 60vw;
+}
+#scndPar{
+margin-left: 30vw;  
+margin-top: 10vh;
+}
+#img1{
+    background-image: url('img/img1.jpg'); 
+}
+#img2{
+    background-image: url('img/img2.jpg');
+}
+#img3{
+    background-image: url('img/img3.jpg');
+
+}
+#img1, #img2, #img3{
+    background-repeat: repeat;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
+    margin-top: 15vh;
+    margin-left: 12vw;
+    z-index: 1;
+}
