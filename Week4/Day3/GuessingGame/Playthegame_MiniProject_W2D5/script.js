@@ -1,40 +1,45 @@
-function playTheGame(){
+let userNumberChoice
+function playTheGame() {
     let asking = confirm("Do you wanna play?")
     let tries = 3
-    if(asking === true){
-        let userNumber = Number(prompt("Please, may you insert number from 0 to 10", "0-10"))
-        console.log(userNumber)
-        if(isNaN(userNumber)){
-        alert("Sorry Not a number, Goodbye")
-        }else if(userNumber < 0 || userNumber > 10){
-        alert("Sorry it’s not a good number, Goodbye")
-        }else{
-            let computerNumber = Math.random()*10
+    if (asking === true) {
+        userNumberChoice = Number(prompt("Please, may you insert number from 0 to 10", "0-10"))
+        console.log(userNumberChoice)
+        if (isNaN(userNumberChoice)) {
+            alert("Sorry Not a number, Goodbye")
+        } else if (userNumberChoice < 0 || userNumberChoice > 10) {
+            alert("Sorry it’s not a good number, Goodbye")
+        } else {
+            let computerNumber = Math.random() * 10
             computerNumber = Math.ceil(computerNumber)
-            console.log(computerNumber)
-            let result = compareNumbers(userNumber,computerNumber)
-            console.log(result)
-            while(result == false){
+            console.log(computerNumber, 'computerNumber')
+            let result = true;
+            // console.log(result, 'result')
+            while (tries > 1 && result) {
+                result = compareNumbers(userNumberChoice, computerNumber);
                 tries--
             }
+
         }
-    }else {
+    } else {
         alert("See you ... very sad")
     }
 }
-playTheGame()
 
-let counter = 0
+playTheGame();
 
-function compareNumbers(userNumber,computerNumber){
-    
-        if(userNumber == computerNumber){
-            alert("Great you are winner")
-            }else if(userNumber > computerNumber){
-                 userNumber = Number(prompt("Your number is bigger then the computer’s, guess again", "0-10"))
-                 compareNumbers(userNumber,computerNumber)
-            }else if(userNumber < computerNumber){
-                 userNumber = Number(prompt("Your number is smaller then the computer’s, guess again", "0-10"))
-                 compareNumbers(userNumber,computerNumber)
-            }
+let counter = 0;
+
+function compareNumbers(userNumber, computerNumber) {
+
+    if (userNumber == computerNumber) {
+        alert("Great you are winner");
+        return false
+    } else if (userNumber > computerNumber) {
+        userNumberChoice = Number(prompt("Your number is bigger then the computer’s, guess again", "0-10"))
+       return true
+    } else if (userNumber < computerNumber) {
+        userNumberChoice = Number(prompt("Your number is smaller then the computer’s, guess again", "0-10"))
+        return  true
+    }
 }
