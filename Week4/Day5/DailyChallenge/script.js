@@ -1,10 +1,10 @@
 let planets = [
-    {name: Earth, moons: 1},
-    {name: Mars, moons: 0},
-    {name: Jupiter, moons: 0},
-    {name: Saturn, moons: 0},
-    {name: Uranus, moons: 0},
-    {name: Neptune, moons: 0},
+    {name: "Earth", moons: 1},
+    {name: "Mars", moons: 0},
+    {name: "Jupiter", moons: 0},
+    {name: "Saturn", moons: 2},
+    {name: "Uranus", moons: 0},
+    {name: "Neptune", moons: 3},
 ]
 
 for(let planet of planets){
@@ -17,5 +17,5 @@ for(let i = 0; i < planet.moons;i++){
     div.appendChild(moonDiv)
 }
 let section = document.querySelector(".listPlanets")
-section.appendChild("div")
+section.appendChild(div)
 }
