@@ -16,7 +16,7 @@ let astrArr = Array(astrCount+4).fill("*");
 console.log(astrArr.join(""))
 
 for(let j = 0; j < array.length;j++){
-console.log("* " + array[j] +  " *")
+console.log("* " + array[j] + "array[j]-" + " *")
 }
 console.log(astrArr.join(""))
 
