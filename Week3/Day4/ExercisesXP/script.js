@@ -35,7 +35,7 @@ console.log(typeof usersLength)
 
 
 switch (usersLength) {
-    // case 2:
+    // case >2:
     //     console.log(users[0] + ", " + users[1] + " " + "and " + (usersLength - 2) + " more are online")
     //     break;
     case 0:
