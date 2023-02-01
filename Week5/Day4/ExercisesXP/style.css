@@ -1,0 +1,6 @@
+#target.is-hovered{
+    border: 5px dashed green;
+}
+#box{
+    cursor: move;
+}
