@@ -3,6 +3,8 @@ listenToMain()
 let currentColor
 let isMousePressed = false
 let chosenColor
+let but1 = document.querySelector(".clear button")
+but1.addEventListener("click", clearCanvas)
 
 function generateCollors(){
     let colorDivs = document.querySelectorAll(".color")
@@ -49,4 +51,12 @@ currentDiv.style.backgroundColor = currentColor
 }
 function handleUp(){
     isMousePressed = false
+}
+
+function clearCanvas(){
+    currentColor = null
+    let squares = document.querySelectorAll("#main > div")
+    for(let square of squares){
+        square.style.backgroundColor = 'white'
+    }
 }
