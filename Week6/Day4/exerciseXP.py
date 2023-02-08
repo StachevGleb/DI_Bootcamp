@@ -7,9 +7,10 @@ print(my_fav_numbers)
 friend_fav_numbers = {6, 7, 8}
 our_fav_numbers = my_fav_numbers.union(friend_fav_numbers)
 print(our_fav_numbers)
-
+# s
 # Exercise 2
-# tuple is immutable
+# tuple is immutabl
+
 tup = (1, 2, 3, 4, 5)
 print(tup)
 
