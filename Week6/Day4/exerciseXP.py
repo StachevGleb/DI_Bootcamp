@@ -127,13 +127,39 @@ for x in my_list2:
 # if a person is under the age of 3, the ticket is free.
 # if they are between 3 and 12, the ticket is $10.
 # if they are over the age of 12, the ticket is $15.
-#
 # Ask a family the age of each person who wants a ticket.
-#
+# user_list = []
+# user_input = 0
+# cost = 0
+# while user_input >= 0:
+#     user_input = int(input("Please, insert the age of each person who wants a ticket: "))
+#     if user_input <= 3 and user_input > 0:
+#         print("The ticket is free")
+#     elif 3 < user_input < 12:
+#         print("The ticket is 10$")
+#         cost = cost + 10
+#     elif 100 > user_input > 12:
+#         print("The ticket is 15$")
+#         cost = cost + 15
+#     else:
+#         break
 # Store the total cost of all the family’s tickets and print it out.
-#
-# A group of teenagers are coming to your movie theater and want to watch a movie that is restricted for people between the ages of 16 and 21.
-# Given a list of names, write a program that asks teenager for their age, if they are not permitted to watch the movie, remove them from the list.
+# print(cost)
+# A group of teenagers are coming to your movie theater and want to watch a movie
+# that is restricted for people between the ages of 16 and 21.
+# Given a list of names, write a program that asks teenager for their age,
+# if they are not permitted to watch the movie, remove them from the list.
 # At the end, print the final list.
 
+# teenagers_list = ['Yosi', 'Ivan', 'Yael']
+# user_name = input('Your name ? :')
+# user_age = int(input("Your age ? :  "))
+#
+# for x in teenagers_list:
+#     if 16 > user_age < 21 and user_name == x:
+#         teenagers_list.remove(user_name)
+#     else:
+#         print("Enjoy the film")
+# print(teenagers_list)
 
+# Exercise 10
