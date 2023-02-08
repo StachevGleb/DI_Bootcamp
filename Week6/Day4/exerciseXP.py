@@ -162,4 +162,41 @@ for x in my_list2:
 #         print("Enjoy the film")
 # print(teenagers_list)
 
-# Exercise 1
+# Exercise 10
+sandwich_orders = ["Tuna sandwich", "Avocado sandwich", "Egg sandwich", "Sabih sandwich", "Pastrami sandwich"]
+finished_sandwiches = []
+for x in sandwich_orders:
+    finished_sandwiches.append(x)
+    print(f" I made your {x}")
+# print(finished_sandwiches)
+# Use the above list called sandwich_orders.
+# Make an empty list called finished_sandwiches.
+# As each sandwich is made, move it to the list of finished sandwiches.
+# After all the sandwiches have been made, print a message listing each sandwich
+# that was made , such as I made your tuna sandwich.
+
+# Exercise 11
+# Using the list sandwich_orders from the previous exercise, make sure the sandwich
+# ‘pastrami’ appears in the list at least three times.
+# Add code near the beginning of your program to print a message saying the deli
+# has run out of pastrami, and then use a while loop to remove all occurrences of
+# pastrami’ from sandwich_orders.
+# Make sure no pastrami sandwiches end up in finished_sandwiches.
+i = 2
+while i > 0:
+    sandwich_orders.append("Pastrami sandwich")
+    i = i - 1
+print(sandwich_orders)
+
+j = (len(sandwich_orders)) - 1
+print(j)
+
+while j >= 0:
+    print(sandwich_orders[j])
+    if sandwich_orders[j] == "Pastrami sandwich":
+        sandwich_orders.pop(j)
+        print(sandwich_orders)
+    j = j - 1
+
+print(sandwich_orders)
+
