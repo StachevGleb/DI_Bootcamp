@@ -177,7 +177,7 @@ for x in sandwich_orders:
 
 # Exercise 11
 # Using the list sandwich_orders from the previous exercise, make sure the sandwich
-# ‘pastrami’ appears in the list at least three times.
+# ‘pastrami appears in the list at least three times.
 # Add code near the beginning of your program to print a message saying the deli
 # has run out of pastrami, and then use a while loop to remove all occurrences of
 # pastrami from sandwich_orders.
