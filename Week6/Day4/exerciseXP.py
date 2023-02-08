@@ -180,7 +180,7 @@ for x in sandwich_orders:
 # ‘pastrami’ appears in the list at least three times.
 # Add code near the beginning of your program to print a message saying the deli
 # has run out of pastrami, and then use a while loop to remove all occurrences of
-# pastrami’ from sandwich_orders.
+# pastrami from sandwich_orders.
 # Make sure no pastrami sandwiches end up in finished_sandwiches.
 i = 2
 while i > 0:
