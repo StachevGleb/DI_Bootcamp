@@ -162,4 +162,4 @@ for x in my_list2:
 #         print("Enjoy the film")
 # print(teenagers_list)
 
-# Exercise 10
+# Exercise 1
