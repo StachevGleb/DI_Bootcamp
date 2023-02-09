@@ -1,11 +1,24 @@
 # Challenge 1
 # Ask the user for a number and a length.
-let 
-# Create a program that prints a list of multiples of the number until the list length reaches length.
-#
-#
-# number: 7 - length 5 ➞ [7, 14, 21, 28, 35]
-#
-# number: 12 - length 10 ➞ [12, 24, 36, 48, 60, 72, 84, 96, 108, 120]
-#
-# number: 17 - length 6 ➞ [17, 34, 51, 68, 85, 102]
+# num = int(input("Please, insert your number ? : "))
+# lnth = int(input("Please, insert your desire length ? : "))
+# counter = 1
+# my_list = []
+# # Create a program that prints a list of multiples of the number until the list length
+# # reaches length.
+# while counter <= lnth:
+#     my_list.append(num * counter)
+#     counter = counter + 1
+# print(my_list)
+
+# Challenge 2
+# Write a program that asks a string to the user, and display a new string
+# with any duplicate consecutive letters removed.
+user_word = input("Insert any word you want with double letters: ")
+user_word_after = ''
+for i, char in enumerate(user_word):
+    if user_word[i] == user_word[i-1]:
+        continue
+    else:
+        user_word_after = user_word_after + char
+print(user_word_after)
