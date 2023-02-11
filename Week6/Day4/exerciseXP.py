@@ -198,6 +198,5 @@ while j >= 0:
         sandwich_orders.pop(j)
         print(sandwich_orders)
     j = j - 1
-
 print(sandwich_orders)
 
