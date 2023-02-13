@@ -19,6 +19,6 @@ user_word_after = ''
 for i, char in enumerate(user_word):
     if user_word[i] == user_word[i-1]:
         continue
-    else:
+    else: # there is no need for the else, you can remove it, becuse once we run continue we will direcley jump to the next iteration
         user_word_after = user_word_after + char
 print(user_word_after)
