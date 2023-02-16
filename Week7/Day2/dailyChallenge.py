@@ -9,15 +9,20 @@ matrix = [
     ['^', 'r', '!'],
 ]
 
+
 decrypted_list = []
 def search_str_matrix(matrix):
     for i in range(3):
+        x = 0
+        for j in range(len(matrix)-1):
+            print(matrix[j][i])
+            if matrix[j][i].isalpha() and matrix[len(matrix)-1][i].isalpha():
+                decrypted_list.append(" ")
         for item in matrix:
             if item[i].isalpha():
                 decrypted_list.append(item[i])
                 print(decrypted_list)
-                if item[i+1].isalpha():
-                    decrypted_list.append(" ")
+
 print(decrypted_list)
 
 search_str_matrix(matrix)
