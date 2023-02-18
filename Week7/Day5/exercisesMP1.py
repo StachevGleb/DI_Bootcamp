@@ -57,7 +57,6 @@ def player_input(board_win_helper, which_player,  board):
                 column = 14
             which_pl_cheker(which_player, board, row, column)
 
-
 def check_win():
     for i in range(3):
         if (board_win_helper[i][0] == "X" and board_win_helper[i][1] == "X" and board_win_helper[i][2] == "X") or\
