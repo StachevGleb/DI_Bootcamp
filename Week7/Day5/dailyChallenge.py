@@ -1,0 +1,5 @@
+sentence = input("Hello friend, insert words separated by comma: ")
+sent_list = sentence.split(",")
+sort_sent_list = sorted(sent_list)
+sentence = ','.join(sort_sent_list)
+print(sentence)
