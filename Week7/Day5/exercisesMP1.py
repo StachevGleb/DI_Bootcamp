@@ -35,44 +35,55 @@ def player_input(board_win_helper, which_player,  board):
         else:
             checker = False
             which_player[0] = which_player[0] + 1
-            if which_player[0] % 2 == 0 and board_win_helper[row-1][column-1] == ' ':
-                board_win_helper[row-1][column-1] = "X"
-                print(board_win_helper)
-            elif which_player[0] % 2 > 0 or which_player[0] % 2 < 0 and board_win_helper[row-1][column-1] == ' ':
-                board_win_helper[row-1][column-1] = "O"
-                print(board_win_helper)
-            elif board_win_helper[row-1][column-1] == 'X' or board_win_helper[row-1][column-1] == 'O':
-                print("Chose another position")
-                which_player[0] = which_player[0] - 1
+            board_win_helper_func(which_player, row, column)
 
-            if row == 2:
-                row = 3
-            elif row == 3:
-                row = 5
-            if column == 1:
-                column = 2
-            elif column == 2:
-                column = 8
-            elif column == 3:
-                column = 14
-            which_pl_cheker(which_player, board, row, column)
+def board_win_helper_func(which_player, row, column):
+    if which_player[0] % 2 == 0 and board_win_helper[row-1][column-1] == ' ':
+        board_win_helper[row-1][column-1] = "X"
+        change_index(row, column)
+    elif which_player[0] % 2 > 0 or which_player[0] % 2 < 0 and board_win_helper[row-1][column-1] == ' ':
+        board_win_helper[row-1][column-1] = "O"
+        change_index(row, column)
+    elif board_win_helper[row-1][column-1] == 'X' or board_win_helper[row-1][column-1] == 'O':
+        print("Chose another position")
+        which_player[0] = which_player[0] - 1
+def change_index(row, column):
+    if row == 2:
+         row = 3
+    elif row == 3:
+        row = 5
+    if column == 1:
+        column = 2
+    elif column == 2:
+        column = 8
+    elif column == 3:
+        column = 14
+    which_pl_cheker(which_player, board, row, column)
 
-def check_win():
+def is_win_by_row_column():
     for i in range(3):
         if (board_win_helper[i][0] == "X" and board_win_helper[i][1] == "X" and board_win_helper[i][2] == "X") or\
-           (board_win_helper[0][i] == "X" and board_win_helper[1][i] == "X" and board_win_helper[2][i] == "X"):
+            (board_win_helper[0][i] == "X" and board_win_helper[1][i] == "X" and board_win_helper[2][i] == "X"):
             print("\"X\" winner win")
         elif (board_win_helper[i][0] == "O" and board_win_helper[i][1] == "O" and board_win_helper[i][2] == "O") or\
-             (board_win_helper[0][i] == "O" and board_win_helper[1][i] == "O" and board_win_helper[2][i] == "O"):
+            (board_win_helper[0][i] == "O" and board_win_helper[1][i] == "O" and board_win_helper[2][i] == "O"):
             print("\"O\" winner win")
-        elif (board_win_helper[0][0] == "X" and board_win_helper[1][1] == "X" and board_win_helper[2][2] == "X") or\
-             (board_win_helper[0][2] == "X" and board_win_helper[1][1] == "X" and board_win_helper[2][0] == "X"):
-            print("\"X\" winner win")
-        elif (board_win_helper[0][0] == "O" and board_win_helper[1][1] == "O" and board_win_helper[2][2] == "O") or\
-             (board_win_helper[0][2] == "O" and board_win_helper[1][1] == "O" and board_win_helper[2][0] == "O"):
-            print("\"O\" winner win")
-        else:
-            player_input(board_win_helper, which_player, board)
+
+def is_win_by_diagonal():
+    if (board_win_helper[0][0] == "X" and board_win_helper[1][1] == "X" and board_win_helper[2][2] == "X") or \
+    (board_win_helper[0][2] == "X" and board_win_helper[1][1] == "X" and board_win_helper[2][0] == "X"):
+        print("\"X\" winner win")
+    elif (board_win_helper[0][0] == "O" and board_win_helper[1][1] == "O" and board_win_helper[2][2] == "O") or \
+            (board_win_helper[0][2] == "O" and board_win_helper[1][1] == "O" and board_win_helper[2][0] == "O"):
+        print("\"O\" winner win")
+    else:
+        player_input(board_win_helper, which_player, board)
+
+def check_win():
+    is_win_by_row_column()
+    is_win_by_diagonal()
+
+
 
 def which_pl_cheker(which_player, board, row, column):
     if which_player[0] % 2 == 0:
