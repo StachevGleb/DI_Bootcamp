@@ -24,6 +24,7 @@ def display_board():
 display_board()
 
 def player_input(board_win_helper, which_player,  board):
+    # the code here is not redable, please split it into functions and each function should describe each secition
     row = int(input("Enter row:  "))
     column = int(input("Enter column: "))
     checker = True
@@ -60,7 +61,12 @@ def change_index(row, column):
         column = 14
     which_pl_cheker(which_player, board, row, column)
 
+<<<<<<< HEAD
 def is_win_by_row_column():
+=======
+def check_win():
+    # split each code into functions, like is_win_by_row, is_win_by_column, etc... 
+>>>>>>> 884257a0d79568dd61851a57de88c8bb6cc97b5e
     for i in range(3):
         if (board_win_helper[i][0] == "X" and board_win_helper[i][1] == "X" and board_win_helper[i][2] == "X") or\
             (board_win_helper[0][i] == "X" and board_win_helper[1][i] == "X" and board_win_helper[2][i] == "X"):
