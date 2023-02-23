@@ -24,7 +24,7 @@ class Farm:
 
 animal_list = []
 macdonald = Farm("McDonald")
-macdonald.add_animal('cow', animal_list,5)
+macdonald.add_animal('cow', animal_list, 5)
 macdonald.add_animal('sheep', animal_list)
 macdonald.add_animal('sheep', animal_list)
 macdonald.add_animal('goat', animal_list, 12)

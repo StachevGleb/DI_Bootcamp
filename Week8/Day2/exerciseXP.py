@@ -83,10 +83,12 @@ class Zoo:
             if ele == []:
                 res.append(ele)
             ele.append(sub)
-        print(res)
+        for el in res:
+            print(el)
 
 ramat_gan_safari = Zoo("Yafo's_zoo")
 ramat_gan_safari.add_animal('Cat')
+ramat_gan_safari.add_animal('Cat_dog')
 ramat_gan_safari.add_animal('Tiger')
 ramat_gan_safari.add_animal('Wolf')
 ramat_gan_safari.add_animal('Dog')
