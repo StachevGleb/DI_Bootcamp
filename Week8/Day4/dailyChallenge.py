@@ -33,7 +33,6 @@ class Pagination:
             self.page_size = int(self.page_size * remainder[0])
 
 
-
 alphabetList = "abcdefghijklmnopqrstuvwxyz".split(', ')
 page = Pagination(alphabetList, 4)
 page.getVisibleItems()
