@@ -9,7 +9,7 @@ def get_user_menu_choice():
     while checker:
         if user_menu_choice == 'x':
             checker = False
-            pass
+            pass # we use the pass just to define empty function, if, for, etc not to return, so use return or break
         elif user_menu_choice == 'g':
             test = Game()
             res = test.play()
