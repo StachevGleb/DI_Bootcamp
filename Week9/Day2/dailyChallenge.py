@@ -25,7 +25,6 @@ class Circle:
         print(circle_list)
 
 
-
 circle1 = Circle.circleArea(10)
 circle2 = Circle.circleArea(20)
 print(circle1 + circle2)
