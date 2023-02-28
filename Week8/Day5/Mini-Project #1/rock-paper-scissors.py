@@ -9,7 +9,7 @@ def get_user_menu_choice():
     while checker:
         if user_menu_choice == 'x':
             checker = False
-            pass
+            break
         elif user_menu_choice == 'g':
             test = Game()
             res = test.play()
