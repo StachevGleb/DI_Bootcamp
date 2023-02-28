@@ -41,7 +41,6 @@ class Mage(Character):
 
 
 
-
 my_inst0 = Character('Leo', 25, 20)
 my_inst1 = Character('Oel')
 druid = Druid('Dru', 40, 20)

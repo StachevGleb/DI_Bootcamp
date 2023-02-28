@@ -7,7 +7,7 @@ class Game():
             if user_item in ['r', 'p', 's']:
                  checker = False
                  return user_item
-            else:
+            else: # it's redundant, please remove because we are doing return one line before
                 user_item = input("Select correct letter in () - (r)ock, / (p)aper or (s)cissors:  ")
 
     def get_computer_item(self):
@@ -16,7 +16,7 @@ class Game():
     def get_game_result(self, user_item, computer_item):
         if user_item == computer_item:
             return 'draw'
-        if user_item == 'r' and computer_item == 'p':
+        if user_item == 'r' and computer_item == 'p': 
             return 'loss'
         if user_item == 'r' and computer_item == 's':
             return 'win'
