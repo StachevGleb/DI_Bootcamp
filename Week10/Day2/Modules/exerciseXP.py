@@ -94,6 +94,7 @@ import random
 import faker
 
 users = []
+
 def users_fake_list():
     input('Your name: ')
     input('Your address: ')
