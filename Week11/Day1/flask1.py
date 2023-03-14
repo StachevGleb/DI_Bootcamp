@@ -46,7 +46,7 @@ app = flask.Flask(__name__)
 template = '''
 	<html>
 	    <head>
-	        <title>homepage.html</title>
+	        <title>blue.html</title>
 	    </head>
 	    <body>
 	        <h1>Hello there</h1>
