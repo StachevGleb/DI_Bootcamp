@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li>
+            <a href="{{url_for('blue_route')}}">blue</a>
+        </li>
+        <li>
+            <a href="{{url_for('red_route')}}">red</a>
+        </li>
+        <li>
+            <a href="{{url_for('green_route')}}">green</a>
+        </li>
+        <li>
+            <a href="{{url_for('yellow_route')}}">yellow</a>
+        </li>
+    </ul>
+</nav>
+    {% block body %}
+    {% endblock %}
+
+    {% block footer %}
+     {% endblock %}
+
+
+</body>
+</html>
