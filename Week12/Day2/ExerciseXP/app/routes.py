@@ -1,6 +1,6 @@
 import flask
-from flask import app as app_new
 import os
+from flask import app as app_new
 from flask import send_from_directory
 from app import flask_app
 from app.forms import AddCity
@@ -27,7 +27,7 @@ def add_city():
             'name': name,
             'country': country,
             'number_of_inhabitants': number_of_inhabitants,
-            'area': area,
+            'area': area
         }
         list_of_cities.append(new_city)
         filename = os.path.join(flask_app.static_folder, 'cities_around_the_world.json')
