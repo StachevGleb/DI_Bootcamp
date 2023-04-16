@@ -9,34 +9,24 @@
         {{ form.hidden_tag() }}
         {{ form.name.label }}
         {{ form.name(size=32) }}
-
         <br>
         <br>
-
         {{ form.country.label }}
         {{ form.country(size=32) }}
-
         <br>
         <br>
-
         {{ form.number_of_inhabitants.label }}
         {{ form.number_of_inhabitants(size=32) }}
-
         <br>
         <br>
-
         {{ form.area.label }}
         {{ form.area(size=32) }}
-
         <br>
         <br>
-
         {{ form.submit() }}
-
         {% for error in form.errors.items() %}
             {{ error[1][0] }}
         {% endfor %}
-
     </form>
 </body>
 </html>

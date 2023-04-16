@@ -7,12 +7,9 @@ from app.forms import AddCity
 import json
 
 list_of_cities = []
-
-
 @flask_app.route("/")
 def index():
     return flask.render_template('index.html')
-
 
 @flask_app.route("/add_city", methods=("GET", "POST"))
 def add_city():
@@ -32,10 +29,14 @@ def add_city():
         list_of_cities.append(new_city)
         filename = os.path.join(flask_app.static_folder, 'cities_around_the_world.json')
         with open(filename, 'r') as f:
-            data = json.load(f)
+            try:
+                data = json.load(f).decode('utf-8')
+                question = data["all"]["questions"]
+            except ValueError:
+                print('Decoding JSON has failed')
+
         data.append(new_city)
         with open(filename, 'w') as f:
             json.dump(data, f, indent=4)
         return flask.redirect(flask.url_for('city'))
-
     return flask.render_template("city.html", form=my_form)

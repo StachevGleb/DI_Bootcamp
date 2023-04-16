@@ -1,7 +1,5 @@
 import flask_wtf
 import wtforms
-
-
 class AddCity(flask_wtf.FlaskForm):
     name = wtforms.StringField("City’s name", validators=[wtforms.validators.DataRequired()])
     country = wtforms.StringField("City’s country", validators=[wtforms.validators.DataRequired()])
