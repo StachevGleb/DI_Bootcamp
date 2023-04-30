@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retrieved data</title>
+</head>
+<body>
+
+    <div>
+        <h1>1. Display all the users (with all the details).</h1>
+        {% for e in data_user %}
+        <p>User {{e.user_id}}: {{ e.name }}, {{ e.street }}, {{ e.city }}, {{ e.zipcode }} </p>
+        {% endfor %}
+    </div>
+
+    <div>
+        <h1>2. Only display the user(s) who live(s) in “Roscoeview”.</h1>
+        {% for e in data_city %}
+        <p>User {{ e.user_id}}: {{ e.name }}, {{ e.street }}, {{ e.city }}, {{ e.zipcode }} </p>
+        {% endfor %}
+    </div>
+    <div>
+        <h3>3.Only display the first 5 users.</h3>
+        {% for e in data5 %}
+        <p>User {{ e.user_id}}: {{ e.name }}, {{ e.street }}, {{ e.city }}, {{ e.zipcode }} </p>
+        {% endfor %}
+    </div>
+    <div>
+        <h2>4. Only display the user(s) which zipcode starts with the number 5.</h2>
+        {% for e in dataZip5 %}
+        <p>User {{ e.user_id}}: {{ e.name }}, {{ e.street }}, {{ e.city }}, {{ e.zipcode }} </p>
+        {% endfor %}
+    </div>
+
+</body>
+</html>

@@ -7,8 +7,6 @@ def insert_page(human_name, race):
     human = Human(name=human_name)
     dog = Dog(race=race, human=human)
 
-    # db.session.add(human)
-    # db.session.add(dog)
     db.session.add_all([human, dog])
     db.session.commit()
 
