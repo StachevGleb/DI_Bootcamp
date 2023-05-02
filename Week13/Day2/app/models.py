@@ -6,3 +6,4 @@ class User(db.Model):
     street = db.Column(db.String(64))
     city = db.Column(db.String(64))
     zipcode = db.Column(db.String(64))
+    # address = db.Column(db.String(64))
